@@ -27,7 +27,7 @@ def main():
         choice = input("\nEnter choice (1/2/3/4/5): ")
 
         if choice == "5":
-            print("Goodbye! 👋")
+            print("Goodbye!")
             break
 
         if choice in ("1", "2", "3", "4"):
@@ -35,7 +35,7 @@ def main():
                 num1 = float(input("Enter first number: "))
                 num2 = float(input("Enter second number: "))
             except ValueError:
-                print("❌ Invalid input. Please enter a number.")
+                print("Invalid input. Please enter a number.")
                 continue
 
             if choice == "1":
@@ -47,7 +47,7 @@ def main():
             elif choice == "4":
                 print(f"Result: {divide(num1, num2)}")
         else:
-            print("❌ Invalid choice. Please select 1-5.")
+            print("Invalid choice. Please select 1-5.")
 
 if __name__ == "__main__":
     main()
